@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      Lunal.ai - Software that pays websites when LLMs use their content
+    </title>
+    <style type='text/css'>
+      html, body, p, pre, li {
+        margin: 0px;
+        padding: 0px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      body {
+        color: #000;
+        background-color: #fff;
+        font-family:  Georgia, serif;
+      }
+      a {
+      /*color: #6B9BE6;*/
+      color: rgb(66, 129, 226);
+      /*color: rgb(71, 71, 224);*/
+      }
+      #title {
+        font-size: 1.5em;
+        text-align: center;
+      }
+      .title-text {
+        margin: 6px 0px;
+      }
+      .sub-header {
+        font-size: 0.7em;
+      }
+      .sub-header a {
+        line-height: 1em;
+      }
+      .sub-header span {
+        color: #676767;
+      }
+      .title-separator {
+        height: 1px;
+        margin: 16px 0px;
+        border-width: 0px;
+        background-color: #ccc;
+      }
+      #post-body {
+        width: 540px;
+        font-size: 1em;
+        margin: 40px auto;
+      }
+      #post-body p {
+        line-height: 1.6;
+        margin-bottom: 18px;
+      }
+      #post-body p.section-header {
+        color: #2a2a2a;
+        font-family: verdana;
+        font-size: 1.15em;
+        font-weight: bold;
+        margin-bottom: 6px !important;
+      }
+      #post-body pre {
+        font-size: 1.1em;
+      }
+      .indent {
+        margin: 0px 0px 18px 20px;
+      }
+      ol, ul {
+        padding-inline-start: 36px; ‍/* 2x .indent{} */
+        margin: 0px 0px 18px 44px;
+      ‍}
+      ol ul {
+        padding-inline-start: 18px; ‍/* 1x .indent{} */
+      }
+      ol li, ul li {
+        margin: 14px 0px;
+        line-height: 1.6em; /* same as #post-body p {} */
+      }
+      img {
+        width: 640px;
+        margin: -10px 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <article id='post-body'>
+      <div id='title'>
+        <div class='title-text'>
+          Lunal
+        </div>
+        <br>
+        <!--
+        <div class='sub-header'>
+          🌕
+          <a href='mailto:grunseid@gmail.com'>Ansgar Grunseid</a><span class='date'>, August 15th 2013</span>
+        </div>
+        -->
+      </div>
+      <p>
+        Hi. 👋 We're Lunal. We write software that pays websites when
+        their content is used by LLMs.
+      </p>
+      <hr class='title-separator'>
+
+      <p class='section-header'>
+        The Peril
+      </p>
+      <p>
+        The web is crumbling.
+      </p>
+      <p>
+        Right now? Quietly. Soon? Violently.
+      </p>
+      <p>
+        Today websites are destinations. Tomorrow they're mines. Their
+        data is scraped, repackaged, and served directly to you by your
+        favorite LLM provider: ChatGPT, Perplexity, Google, etc. Why
+        browse the web when your LLM delivers better answers faster?
+      </p>
+      <p>
+        The genie’s out of the bottle: ChatGPT is the fastest-growing
+        consumer application. Ever.<sup><a href='https://www.theverge.com/2023/2/2/23582439/chatgpt-fastest-growing-app-ubs-report'>1</a></sup>
+        Users aren’t going back.
+      </p>
+      <p>
+        But this is a silent, looming death blow to the web. No browsing
+        means no ad impressions. No ads means no revenue. And no revenue
+        means no web.
+      </p>
+      <p>
+        But here's the paradox: without the web, AI starves. LLMs need
+        fresh content to stay relevant, but their very use cannibalizes
+        content creation. LLMs accretively erode the web. And in turn?
+        Themselves.
+      </p>
+      <p>
+        We need a new, sustainable model for AI and the web. The whole
+        web. Incumbents like Google and Reddit are inking one-off,
+        private <a href='https://www.lifewire.com/google-reddit-deal-8685766'>deals</a>.
+        But that doesn't scale. We need a model that scales. For
+        everyone.
+      </p>
+      <p>
+        So we built one.
+      </p>
+      <p>
+        We call it Lunal.
+      </p>
+
+      <p class='section-header'>
+        A New Way
+      </p>
+      <p>
+        LLMs and AI-powered search don't have to shatter the web. They
+        can save it. How? By flowing money back to the websites whose
+        content they serve.
+      </p>
+      <p>
+        That's Lunal. Here's how it works:
+      </p>
+      <ol>
+        <li>You use your favorite LLM, e.g. ChatGPT or Perplexity.</li>
+        <li>It generates an answer with content from websites.</li>
+        <li>Lunal calculates the value of each website's contributions.</li>
+        <li>
+          Lunal facilitates payments from the LLM to each website for
+          its contributions.
+        </li>
+      </ol>
+      <p>
+        It's like an affiliate network. But for AI answers. LLMs make
+        money with ads and/or subscriptions (e.g. ChatGPT Plus) and
+        share a fair portion of this income with the websites that
+        provide it content.
+      </p>
+      <p>
+        Simple. Fair. Transparent.
+      </p>
+      <p>
+        Let's walk through an example.
+      </p>
+      <ol>
+        <li>
+          Perplexity integrates Lunal's SDK.
+
+          <p>
+            <!--
+                - highlights by https://pinetools.com/syntax-highlighter
+                - added: class='indent'
+                - removed: padding: and background-color: from the
+                  parent <pre> ele
+                - removed: all other class= attrs, which are unused hljs
+                  classes
+              -->
+              <pre class='indent' style='display: block; overflow-x: auto; color: rgb(51, 51, 51);'><span><span style='color: navy; font-weight: 400;'>&lt;<span style='color: navy; font-weight: 400;'>script</span> <span style='color: teal;'>src</span>=<span style='color: rgb(221, 17, 68);'>'https://lunal.ai/sdk.js'</span>&gt;</span><span></span><span style='color: navy; font-weight: 400;'>&lt;/<span style='color: navy; font-weight: 400;'>script</span>&gt;</span></span></pre>
+          </p>
+        </li>
+        <li>
+          You ask Perplexity: "what's the latest on the LA wildfires?"
+        </li>
+        <li>
+          Perplexity searches the web, gathers data from multiple
+          websites, and generates an answer for you.
+        </li>
+        <a href='https://www.perplexity.ai/search/whats-the-latest-on-the-la-wil-.ux248a7TeuF8.RWwVqEMQ'><img src='perplexity-la-wildfires-40px.webp'></a>
+        <li>
+          Lunal’s SDK analyzes Perplexity's answer and determines:
+          <ul>
+            <li>
+              Which websites contributed data,
+              e.g. <a href='https://www.cnn.com/weather/live-news/fires-los-angeles-california-01-16-25/index.html'>cnn.com</a> and <a href='https://www.nbcnews.com/weather/wildfires/live-blog/california-wildfires-live-updates-winds-die-fires-rage-la-area-rcna187911'>nbcnews.com</a>.
+            </li>
+            <li>
+              How much content each website, e.g. cnn.com and
+              nbcnews.com, contributed to the answer.
+            </li>
+          </ul>
+        <li>
+          Then, like an affiliate network calculates commissions, Lunal
+          calculates each contribution's value. E.g. $0.05 to cnn.com
+          and $0.05 to nbcnews.com.<br> (For context, Google makes
+          ~$0.30 in revenue per search in the
+          US.<sup><a href='https://start.askwonder.com/insights/google-s-revenue-per-search-us-ideally-split-desktop-mobile-726pgp9pz?utm_source=chatgpt.com'>1</a></sup>)
+        </li>
+        <li>Lunal charges Perplexity $0.10.</li>
+        <li>
+          Lunal pays cnn.com $0.05 and nbcnews.com $0.05.
+        </li>
+        </li>
+      </ol>
+      <p>
+        Lunal's business model is simple and familiar: take a small cut
+        of transactions.
+      </p>
+      <p>
+        No personal data is tracked or recorded. Privacy first.
+      </p>
+      <p>
+        Users get fast, accurate answers. LLMs get content. Websites get
+        paid.
+      </p>
+      <p>
+        Everyone wins.
+      </p>
+
+      <p class='section-header'>
+        Deliverance
+      </p>
+      <p>
+        The web has responded. Lawsuits are piling up:
+      </p>
+      <ul>
+        <li>
+          <a href='https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html'>The New York Times sues OpenAI and Microsoft.</a>
+        </li>
+        <li>
+          <a href='https://www.wsj.com/business/media/wall-street-journal-new-york-post-sue-perplexity-ai-c5d9554d'>The Wall Street Journal and The New York Post sue Perplexity.</a>
+        </li>
+        <li>
+          <a href='https://apnews.com/article/3e1790fcf4c9f001f1d32609c4d547af'>The Canadian Press, Torstar, Globe and Mail, Postmedia, and CBC/Radio-Canada sue OpenAI.</a>
+        </li>
+      </ul>
+      <p>
+        This isn’t a trend. It’s a collision course.
+      </p>
+      <p>
+        But this is beyond legal compliance and settlements. It’s about
+        survival. Content isn't free.
+      </p>
+      <p>
+        The web has started to fight
+        back.<sup><a href='https://www.threads.net/@gergelyorosz_/post/C6S2FfdIfcm?hl=en'>1</a></sup>
+        Like a host fighting a parasite. 85% of Cloudflare-protected
+        websites now block AI
+        crawlers.<sup><a href='https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click'>1</a></sup>
+      </p>
+      <p>
+        <a class='indent' href='cloudflare-llm-block-rate-40px.webp'><img src='cloudflare-llm-block-rate-40px.webp' alt='https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click'></a>
+      </p>
+      <p>
+        Even so, blocking crawlers hasn’t halted LLM adoption. And it won't.
+      </p>
+      <p>
+        But AI doesn’t need to eat the web to succeed. Instead, Lunal
+        offers a sustainable, fair model for the web in the age of AI.
+      </p>
+      <p>
+        And we're launching. Publicly. Soon.
+      </p>
+      <ul>
+        <li>
+             Are you building an AI product that uses web
+             content? <a href='mailto:team@lunal.ai'>Reach out</a> to
+             integrate our SDK and engender content creation.
+        </li>
+        <li>
+            Run a website? <a href='mailto:team@lunal.ai'>Get in
+            touch</a> to get paid when LLMs use your content.
+        </li>
+      </ul>
+      <p>
+        Love,<br/>
+        <a href='https://github.com/gruns'>Ansgar</a>, <a href='https://github.com/AmeanAsad'>Amean</a>,
+        and the merry band of misfits at Lunal
+      </p>
+    </article>
+
+    <!-- TODO(ans): add google analytics -->
+  </body>
+</html>
