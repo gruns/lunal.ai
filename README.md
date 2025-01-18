@@ -1,1 +1,1 @@
-the [lunal.ai](lunal.ai) homepage
+the [lunal.ai](https://lunal.ai/) homepage
